@@ -1,3 +1,27 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+html {
+    background-color: #000;
+}
+
+body {
+    min-height: 100vh;
+    max-width: 1920px;
+    background-color: papayawhip;
+    margin: 0 auto;
+    font-family: 'Inter';
+}
+
+.text-font {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 150%;
+}
+
+.related-font {
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 110%;
+}
