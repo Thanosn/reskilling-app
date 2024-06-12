@@ -32,7 +32,7 @@ app.get("/posts", (req, res) => {
                     "thumbnailUrl": photos[i].thumbnailUrl,
                     "title": posts[i].title,
                     // There is no author field in the API
-                    "author": /*posts[i].author*/ "Placeholder"
+                    "author": /*posts[i].author*/ "Placeholder Author"
                 })
             }
             res.json(result);
@@ -54,8 +54,9 @@ app.get("/post/:id", (req, res) => {
                 "photoTitle": photo.title,
                 "url": photo.url,
                 "title": post.title,
+                "body": post.body,
                 // There is no author field in the API
-                "author": /*post.author*/ "Placeholder"
+                "author": /*post.author*/ "Placeholder Author"
             }
             res.json(result)
         })
