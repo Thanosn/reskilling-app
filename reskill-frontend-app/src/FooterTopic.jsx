@@ -2,10 +2,10 @@
 function FooterTopic(props) {
   return (
     <>
-      <h1> {props.topic} </h1>
-      <p><a href="">Page</a></p>
-      <p><a href="">Page</a></p>
-      <p><a href="">Page</a></p>
+      <div className="font-semibold"> {props.topic} </div>
+      <div className="mt-8"><a href="" >Page</a></div>
+      <div className="mt-8"><a href="" >Page</a></div>
+      <div className="mt-8"><a href="" >Page</a></div>
     </>
   )
 }

@@ -6,16 +6,15 @@ import youtubeLogo from './assets/youtube.svg'
 import instaLogo from './assets/instagram.svg'
 
 function Socials() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      <a href=''><img src={fbLogo}/></a>
-      <a href=''><img src={linkedLogo}/></a>
-      <a href=''><img src={youtubeLogo}/></a>
-      <a href=''><img src={instaLogo}/></a>
+      <div className='float-start mr-12'><a href=''><img src={fbLogo} width='24'/></a></div>
+      <div className='float-start mr-12'><a href=''><img src={linkedLogo} width='24'/></a></div>
+      <div className='float-start mr-12'><a href=''><img src={youtubeLogo} width='24'className='pt-0.5'/></a></div>
+      <div className='float-start mr-12'><a href=''><img src={instaLogo} width='24'/></a></div>
     </>
   )
 }
 
 export default Socials
+
