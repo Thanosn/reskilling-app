@@ -3,15 +3,17 @@
 @tailwind utilities;
 
 html {
-    background-color: #000;
+    /* background-color: #000; */
 }
 
 body {
-    min-height: 100vh;
-    max-width: 1920px;
-    background-color: papayawhip;
+    /* max-width: 1920px;
     margin: 0 auto;
+    background-color: white; */
+    min-height: 100vh;
+
     font-family: 'Inter';
+    font-style: normal;
 }
 
 .text-font {
@@ -20,8 +22,41 @@ body {
     line-height: 150%;
 }
 
+.button-font {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+}
+
+.footer-page-color-font {
+    color: #454545;
+}
+
+.subtitle-color-font {
+    color: #828282;
+}
+
+.page-title-font {
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 77px;
+    letter-spacing: -0.02em;
+}
+
+.page-subtitle-font {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 150%;
+}
+
 .related-font {
     font-weight: 600;
     font-size: 40px;
     line-height: 110%;
+}
+
+.footer-site-name-font {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 150%;
 }

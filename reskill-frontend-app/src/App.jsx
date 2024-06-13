@@ -4,7 +4,7 @@ import Footer from './Footer'
 import MainBody from './MainBody';
 
 function App() {
-  const SITENAME = "Reskiling App"
+  const SITENAME = "Reskiling Posts App"
   return (
     <div className='pt-4 px-24'>
       <Header siteName={SITENAME} />

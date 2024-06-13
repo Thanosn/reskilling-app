@@ -19,7 +19,7 @@ function PostsHomepage() {
     <>
       <PageTitle title="Posts List" subtitle="Subheading that sets up context, shares more info about the author, or generally gets people psyched to keep reading" />
 
-      {homepagePosts && <img className='size-full rounded-xl' src={homepagePosts[0].url} title={homepagePosts[0].photoTitle} alt={homepagePosts[0].photoTitle} />}
+      {homepagePosts && <img className='size-full rounded-xl' src={homepagePosts[0].url} title={homepagePosts[0].photoTitle} alt={homepagePosts[0].photoTitle} width='1' height='1' />}
       <div className='mx-96 my-16'>
         <p className='text-font mb-8'>Body text for your whole article or post. We’ll put in some lorem ipsum to show how a filled-out page might look: </p>
         <p className='text-font mb-8'>Excepteur efficient emerging, minim veniam anim aute carefully curated Ginza conversation exquisite perfect nostrud nisi intricate Content.
@@ -32,8 +32,8 @@ function PostsHomepage() {
         </p>
       </div>
       <div className='flex'>
-        {homepagePosts && <img className='rounded-xl mr-8 size-6/12' src={homepagePosts[1].url} title={homepagePosts[1].photoTitle} alt={homepagePosts[1].photoTitle} />}
-        {homepagePosts && <img className='rounded-xl ml-8 size-6/12' src={homepagePosts[2].url} title={homepagePosts[2].photoTitle} alt={homepagePosts[2].photoTitle} />}
+        {homepagePosts && <img className='rounded-xl mr-8 size-6/12' src={homepagePosts[1].url} title={homepagePosts[1].photoTitle} alt={homepagePosts[1].photoTitle} width='1' height='1' />}
+        {homepagePosts && <img className='rounded-xl ml-8 size-6/12' src={homepagePosts[2].url} title={homepagePosts[2].photoTitle} alt={homepagePosts[2].photoTitle} width='1' height='1' />}
       </div>
       <div className='mx-96 my-16'>
         <p className='text-font mb-8'>Excepteur efficient emerging, minim veniam anim cloying aute carefully curated gauche. Espresso exquisite perfect nostrud nisi intricate.
@@ -50,5 +50,4 @@ function PostsHomepage() {
 }
 
 export default PostsHomepage
-
 
