@@ -5,7 +5,7 @@ import Post from './Post'
 
 function MainBody() {
   return (
-    <div className="pt-14 pb-20">
+    <div className="rat-pt-14 rat-pb-20">
       <Router>
         <Routes>
           <Route exact path="/" element={<Navigate to="/posts" replace />} />

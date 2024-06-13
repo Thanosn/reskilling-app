@@ -1,6 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  // prefix: "ra-",
+  //rat: Reskilling App Tailwind
+  prefix: "rat-",
   content: [
     "./index.html",
     "./src/**/*.{js,jsx}"

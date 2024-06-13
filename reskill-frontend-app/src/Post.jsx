@@ -15,11 +15,11 @@ function Post() {
   return (
     <>
       {postData && (
-        <div className='flex'>
-          <div className='mr-64'><PageTitle title={postData.title} subtitle={"Written by: " + postData.author} />
-            <p className='text-font mb-12'>{postData.body}</p>
+        <div className='rat-flex'>
+          <div className='rat-mr-64'><PageTitle title={postData.title} subtitle={"Written by: " + postData.author} />
+            <p className='text-font rat-mb-12'>{postData.body}</p>
 
-            <p className='text-font mb-12'>
+            <p className='text-font rat-mb-12'>
               Excepteur efficient emerging, minim veniam anim aute carefully curated Ginza conversation exquisite perfect nostrud nisi intricate Content.
               Qui  international first-class nulla ut. Punctual adipisicing, essential lovely queen tempor eiusmod irure.
               Exclusive izakaya charming Scandinavian impeccable aute quality of life soft power pariatur Melbourne occaecat discerning.
@@ -27,7 +27,7 @@ function Post() {
               Zürich sleepy perfect consectetur.
             </p>
           </div>
-          <img className='rounded-xl' src={postData.url} title={postData.photoTitle} alt={postData.photoTitle} width='1900' height='1900'/>
+          <img className='rat-rounded-xl' src={postData.url} title={postData.photoTitle} alt={postData.photoTitle} width='1900' height='1900'/>
         </div>
       )}
     </>

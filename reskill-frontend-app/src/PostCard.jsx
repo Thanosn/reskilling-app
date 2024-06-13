@@ -6,10 +6,10 @@ function PostCard(props) {
 
   return (
     <>
-      <button className="p-1 hover:p-0 " onClick={() => navigate(`/post/${post.id}`)}>
-        <img className="rounded-xl min-w-full" src={post.thumbnailUrl} title={post.photoTitle} alt={post.photoTitle} width='1' height='1'></img>
-        <div className="pb-1 pt-3 text-left text-font">{post.title}</div>
-        <div className="text-left subtitle-color-font">{post.author}</div>
+      <button className="rat-p-1 hover:rat-p-0" onClick={() => navigate(`/post/${post.id}`)}>
+        <img className="rat-rounded-xl rat-min-w-full" src={post.thumbnailUrl} title={post.photoTitle} alt={post.photoTitle} width='1' height='1'></img>
+        <div className="rat-pb-1 rat-pt-3 rat-text-left text-font">{post.title}</div>
+        <div className="rat-text-left subtitle-color-font">{post.author}</div>
       </button>
     </>
   )

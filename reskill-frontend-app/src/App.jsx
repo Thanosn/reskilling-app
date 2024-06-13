@@ -6,7 +6,7 @@ import MainBody from './MainBody';
 function App() {
   const SITENAME = "Reskiling Posts App"
   return (
-    <div className='pt-4 px-24'>
+    <div className='rat-pt-4 rat-px-24'>
       <Header siteName={SITENAME} />
       <MainBody />
       <Footer siteName={SITENAME} />
