@@ -10,7 +10,7 @@ function Post() {
   const postId = useParams().id
 
   useEffect(() => {
-    fetch(`${URL}:${PORT}/${postId}`)
+    fetch(`${URL}:${PORT}/post/${postId}`)
       .then(response => response.json())
       .then(setPostData)
   }, [postId])
