@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
-import RelatedPosts from './RelatedPosts';
-import PageTitle from './PageTitle';
+import RelatedPosts from './RelatedPosts/RelatedPosts';
+import PageTitle from '../PageTitle/PageTitle';
 
 function PostsHomepage() {
   const [homepagePosts, setHomepagePosts] = useState(null)
@@ -21,7 +21,9 @@ function PostsHomepage() {
 
       {homepagePosts && <img className='rat-size-full rat-rounded-xl' src={homepagePosts[0].url} title={homepagePosts[0].photoTitle} alt={homepagePosts[0].photoTitle} width='1' height='1' />}
       <div className='rat-mx-96 rat-my-16'>
-        <p className='text-font rat-mb-8'>Body text for your whole article or post. We’ll put in some lorem ipsum to show how a filled-out page might look: </p>
+        <p className='text-font rat-mb-8'>
+          Body text for your whole article or post. We’ll put in some lorem ipsum to show how a filled-out page might look:
+        </p>
         <p className='text-font rat-mb-8'>Excepteur efficient emerging, minim veniam anim aute carefully curated Ginza conversation exquisite perfect nostrud nisi intricate Content.
           Qui international first-class nulla ut. Punctual adipisicing, essential lovely queen tempor eiusmod irure.
           Exclusive izakaya charming Scandinavian impeccable aute quality of life soft power pariatur Melbourne occaecat discerning.

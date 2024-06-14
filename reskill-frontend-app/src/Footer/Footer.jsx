@@ -1,6 +1,8 @@
 import FooterTopic from './FooterTopic'
 import Socials from './Socials'
 
+import "./Footer.css"
+
 function Footer(props) {
   return (
     <div className='rat-pt-24'>

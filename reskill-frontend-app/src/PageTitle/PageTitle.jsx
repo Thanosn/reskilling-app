@@ -1,4 +1,6 @@
 
+import "./PageTitle.css"
+
 function PageTitle(props) {
   return (
     <div className="rat-mb-12 rat-w-1/2">
@@ -9,4 +11,3 @@ function PageTitle(props) {
 }
 
 export default PageTitle
-

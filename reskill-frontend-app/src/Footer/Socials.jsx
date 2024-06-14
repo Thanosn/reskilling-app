@@ -1,7 +1,7 @@
-import fbLogo from './assets/fb.svg'
-import linkedLogo from './assets/linkedIn.svg'
-import youtubeLogo from './assets/youtube.svg'
-import instaLogo from './assets/instagram.svg'
+import fbLogo from '../assets/fb.svg'
+import linkedLogo from '../assets/linkedIn.svg'
+import youtubeLogo from '../assets/youtube.svg'
+import instaLogo from '../assets/instagram.svg'
 
 function Socials() {
   return (

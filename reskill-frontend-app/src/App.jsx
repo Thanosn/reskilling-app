@@ -1,6 +1,6 @@
 
 import Header from './Header'
-import Footer from './Footer'
+import Footer from './Footer/Footer'
 import MainBody from './MainBody';
 
 function App() {

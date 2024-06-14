@@ -1,5 +1,7 @@
 import { useNavigate } from "react-router-dom";
 
+import "./PostCard.css"
+
 function PostCard(props) {
   const navigate = useNavigate();
   const post = props.post;

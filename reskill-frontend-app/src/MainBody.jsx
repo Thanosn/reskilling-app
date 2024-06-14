@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
 
-import PostsHomepage from './PostsHomepage'
+import PostsHomepage from './HomePage/PostsHomepage'
 import Post from './Post'
 
 function MainBody() {

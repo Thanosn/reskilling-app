@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import { useParams } from "react-router-dom";
-import PageTitle from './PageTitle';
+import PageTitle from './PageTitle/PageTitle';
 
 function Post() {
   const [postData, setPostData] = useState(null)
@@ -16,8 +16,11 @@ function Post() {
     <>
       {postData && (
         <div className='rat-flex'>
-          <div className='rat-mr-64'><PageTitle title={postData.title} subtitle={"Written by: " + postData.author} />
-            <p className='text-font rat-mb-12'>{postData.body}</p>
+          <div className='rat-mr-64'>
+            <PageTitle title={postData.title} subtitle={"Written by: " + postData.author} />
+            <p className='text-font rat-mb-12'>
+              {postData.body}
+            </p>
 
             <p className='text-font rat-mb-12'>
               Excepteur efficient emerging, minim veniam anim aute carefully curated Ginza conversation exquisite perfect nostrud nisi intricate Content.
@@ -27,7 +30,7 @@ function Post() {
               Zürich sleepy perfect consectetur.
             </p>
           </div>
-          <img className='rat-rounded-xl' src={postData.url} title={postData.photoTitle} alt={postData.photoTitle} width='1900' height='1900'/>
+          <img className='rat-rounded-xl' src={postData.url} title={postData.photoTitle} alt={postData.photoTitle} width='1900' height='1900' />
         </div>
       )}
     </>
