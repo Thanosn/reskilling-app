@@ -18,4 +18,3 @@ function MainBody() {
 }
 
 export default MainBody
-

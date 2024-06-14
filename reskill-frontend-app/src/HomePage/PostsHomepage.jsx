@@ -2,12 +2,15 @@ import { useState, useEffect } from 'react'
 import RelatedPosts from './RelatedPosts/RelatedPosts';
 import PageTitle from '../PageTitle/PageTitle';
 
+const URL = "http://localhost"
+const PORT = 5000
+
 function PostsHomepage() {
   const [homepagePosts, setHomepagePosts] = useState(null)
   const [relatedPostsFromBackend, setRelatedPostsFromBackend] = useState(null)
 
   useEffect(() => {
-    fetch("http://localhost:5000/posts")
+    fetch(`${URL}:${PORT}/posts`)
       .then(response => response.json())
       .then(data => {
         setHomepagePosts(data.slice(0, 3))
@@ -52,4 +55,3 @@ function PostsHomepage() {
 }
 
 export default PostsHomepage
-

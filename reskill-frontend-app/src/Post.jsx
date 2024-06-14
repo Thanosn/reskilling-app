@@ -2,12 +2,15 @@ import { useState, useEffect } from 'react'
 import { useParams } from "react-router-dom";
 import PageTitle from './PageTitle/PageTitle';
 
+const URL = "http://localhost"
+const PORT = 5000
+
 function Post() {
   const [postData, setPostData] = useState(null)
   const postId = useParams().id
 
   useEffect(() => {
-    fetch(`http://localhost:5000/post/${postId}`)
+    fetch(`${URL}:${PORT}/${postId}`)
       .then(response => response.json())
       .then(setPostData)
   }, [postId])
@@ -38,4 +41,3 @@ function Post() {
 }
 
 export default Post
-

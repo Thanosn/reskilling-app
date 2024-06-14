@@ -11,4 +11,3 @@ function FooterTopic(props) {
 }
 
 export default FooterTopic
-
